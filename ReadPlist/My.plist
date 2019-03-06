@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Countries</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Belgium</string>
+			<key>flagImageName</key>
+			<string>Belgium.jpg</string>
+			<key>Coins</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>1 euro cent</string>
+					<key>image</key>
+					<string>bel1ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>2 euro cent</string>
+					<key>image</key>
+					<string>bel2ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>5 euro cent</string>
+					<key>image</key>
+					<string>bel5ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>10 euro cent</string>
+					<key>image</key>
+					<string>bel10ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>20 euro cent</string>
+					<key>image</key>
+					<string>bel20ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>50 euro cent</string>
+					<key>image</key>
+					<string>bel50ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>1 euro</string>
+					<key>image</key>
+					<string>bel1e.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>2 euro</string>
+					<key>image</key>
+					<string>bel2e.jpg</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Germany</string>
+			<key>flagImageName</key>
+			<string>Germany.jpg</string>
+			<key>Coins</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>1 euro cent</string>
+					<key>image</key>
+					<string>ger1ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>2 euro cent</string>
+					<key>image</key>
+					<string>ger2ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>5 euro cent</string>
+					<key>image</key>
+					<string>ger5ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>10 euro cent</string>
+					<key>image</key>
+					<string>ger10ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>20 euro cent</string>
+					<key>image</key>
+					<string>ger20ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>50 euro cent</string>
+					<key>image</key>
+					<string>ger50ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>1 euro</string>
+					<key>image</key>
+					<string>ger1e.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>2 euro</string>
+					<key>image</key>
+					<string>ger2e.jpg</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Andorra</string>
+			<key>flagImageName</key>
+			<string>Andorra.jpg</string>
+			<key>Coins</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>1 euro cent</string>
+					<key>image</key>
+					<string>and1ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>2 euro cent</string>
+					<key>image</key>
+					<string>and2ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>5 euro cent</string>
+					<key>image</key>
+					<string>and5ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>10 euro cent</string>
+					<key>image</key>
+					<string>and10ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>20 euro cent</string>
+					<key>image</key>
+					<string>and20ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>50 euro cent</string>
+					<key>image</key>
+					<string>and50ec.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>1 euro</string>
+					<key>image</key>
+					<string>and1e.jpg</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>2 euro</string>
+					<key>image</key>
+					<string>and2e.jpg</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
