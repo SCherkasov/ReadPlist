@@ -14,6 +14,7 @@ class CoinsCollectionViewController: UICollectionViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+   
   }
   
   // MARK: UICollectionViewDataSource
