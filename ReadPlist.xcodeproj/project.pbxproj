@@ -13,9 +13,9 @@
 		8A6D0E322229810700AA544B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0E302229810700AA544B /* LaunchScreen.storyboard */; };
 		8A6D0E3A222981C600AA544B /* My.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0E39222981C600AA544B /* My.plist */; };
 		8A6D0E3E222FD5CB00AA544B /* CountriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D0E3D222FD5CB00AA544B /* CountriesCollectionViewController.swift */; };
-		8A6D0E40222FD68400AA544B /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D0E3F222FD68400AA544B /* MyCollectionViewCell.swift */; };
 		8A6D0E42222FEC7600AA544B /* CoinsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D0E41222FEC7600AA544B /* CoinsCollectionViewCell.swift */; };
 		8A6D0E44222FEC8700AA544B /* CoinsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D0E43222FEC8700AA544B /* CoinsCollectionViewController.swift */; };
+		8A6D0E48222FFC6400AA544B /* CountriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D0E47222FFC6400AA544B /* CountriesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		8A6D0E332229810700AA544B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A6D0E39222981C600AA544B /* My.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = My.plist; sourceTree = "<group>"; };
 		8A6D0E3D222FD5CB00AA544B /* CountriesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCollectionViewController.swift; sourceTree = "<group>"; };
-		8A6D0E3F222FD68400AA544B /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A6D0E41222FEC7600AA544B /* CoinsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A6D0E43222FEC8700AA544B /* CoinsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsCollectionViewController.swift; sourceTree = "<group>"; };
+		8A6D0E47222FFC6400AA544B /* CountriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6D0E41222FEC7600AA544B /* CoinsCollectionViewCell.swift */,
-				8A6D0E3F222FD68400AA544B /* MyCollectionViewCell.swift */,
+				8A6D0E47222FFC6400AA544B /* CountriesCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			files = (
 				8A6D0E3E222FD5CB00AA544B /* CountriesCollectionViewController.swift in Sources */,
 				8A6D0E44222FEC8700AA544B /* CoinsCollectionViewController.swift in Sources */,
-				8A6D0E40222FD68400AA544B /* MyCollectionViewCell.swift in Sources */,
+				8A6D0E48222FFC6400AA544B /* CountriesCollectionViewCell.swift in Sources */,
 				8A6D0E282229810200AA544B /* AppDelegate.swift in Sources */,
 				8A6D0E42222FEC7600AA544B /* CoinsCollectionViewCell.swift in Sources */,
 			);

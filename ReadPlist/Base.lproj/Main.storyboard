@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="FlR-cT-Tww" customClass="MyCollectionViewCell" customModule="ReadPlist" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="FlR-cT-Tww" customClass="CountriesCollectionViewCell" customModule="ReadPlist" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -70,9 +70,9 @@
                                 </constraints>
                                 <size key="customSize" width="88" height="88"/>
                                 <connections>
-                                    <outlet property="nameLabel" destination="HxZ-4O-oi9" id="MmB-Ga-NVa"/>
-                                    <outlet property="thumb" destination="LSy-me-h4V" id="5Yp-4D-0OL"/>
-                                    <segue destination="cN5-A9-nan" kind="show" id="3Xp-Om-EDa"/>
+                                    <outlet property="nameLabel" destination="HxZ-4O-oi9" id="XXN-Ew-fXT"/>
+                                    <outlet property="thumb" destination="LSy-me-h4V" id="dlo-pY-frD"/>
+                                    <segue destination="2yr-Lz-qlU" kind="show" id="Qwb-AZ-06h"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -88,49 +88,49 @@
             <point key="canvasLocation" x="1188" y="142.57871064467767"/>
         </scene>
         <!--Coins Collection View Controller-->
-        <scene sceneID="ewm-OS-jM6">
+        <scene sceneID="zbx-Cc-Kgk">
             <objects>
-                <collectionViewController id="cN5-A9-nan" customClass="CoinsCollectionViewController" customModule="ReadPlist" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wFb-2B-1ji">
+                <collectionViewController id="2yr-Lz-qlU" customClass="CoinsCollectionViewController" customModule="ReadPlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5HU-49-Oth">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FaT-yI-4x9">
-                            <size key="itemSize" width="92" height="87"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zeg-kZ-7Fh">
+                            <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="sxz-nD-Qsw" customClass="CoinsCollectionViewCell" customModule="ReadPlist" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="cU3-j4-sRW" customClass="CoinsCollectionViewCell" customModule="ReadPlist" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSW-rN-uKC">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwC-b3-3Jg">
                                             <rect key="frame" x="0.0" y="0.0" width="88" height="68"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2cR-ZH-c1T">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zmp-Pi-T77">
                                                     <rect key="frame" x="0.0" y="0.0" width="88" height="68"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="88" id="Ra8-wJ-eYs"/>
-                                                        <constraint firstAttribute="height" constant="68" id="XAd-MB-9m6"/>
+                                                        <constraint firstAttribute="height" constant="68" id="USj-eE-z1t"/>
+                                                        <constraint firstAttribute="width" constant="88" id="XjJ-bl-5dW"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="88" id="3R9-ZU-8gz"/>
-                                                <constraint firstAttribute="bottom" secondItem="2cR-ZH-c1T" secondAttribute="bottom" id="48Q-n0-0Er"/>
-                                                <constraint firstItem="2cR-ZH-c1T" firstAttribute="leading" secondItem="dSW-rN-uKC" secondAttribute="leading" id="IYr-Li-EyX"/>
-                                                <constraint firstAttribute="height" constant="68" id="Ie6-cR-anf"/>
-                                                <constraint firstItem="2cR-ZH-c1T" firstAttribute="top" secondItem="dSW-rN-uKC" secondAttribute="top" id="b0q-6W-ogE"/>
-                                                <constraint firstAttribute="trailing" secondItem="2cR-ZH-c1T" secondAttribute="trailing" id="ufW-ys-wEz"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zmp-Pi-T77" secondAttribute="bottom" id="Mld-xu-DKt"/>
+                                                <constraint firstAttribute="height" constant="68" id="a2t-60-KZW"/>
+                                                <constraint firstItem="Zmp-Pi-T77" firstAttribute="top" secondItem="EwC-b3-3Jg" secondAttribute="top" id="dcL-Fb-yOl"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zmp-Pi-T77" secondAttribute="trailing" id="f95-xo-xr4"/>
+                                                <constraint firstItem="Zmp-Pi-T77" firstAttribute="leading" secondItem="EwC-b3-3Jg" secondAttribute="leading" id="fti-vY-wWY"/>
+                                                <constraint firstAttribute="width" constant="88" id="xvG-q2-c7v"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NH-2C-cbv">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uo5-9s-MvP">
                                             <rect key="frame" x="0.0" y="69" width="88" height="14"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
@@ -139,31 +139,29 @@
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="dSW-rN-uKC" secondAttribute="trailing" id="09e-bh-L3P"/>
-                                    <constraint firstAttribute="bottom" secondItem="4NH-2C-cbv" secondAttribute="bottom" constant="5" id="BZe-Lb-AqS"/>
-                                    <constraint firstItem="4NH-2C-cbv" firstAttribute="leading" secondItem="sxz-nD-Qsw" secondAttribute="leading" id="C9D-QK-aq5"/>
-                                    <constraint firstAttribute="trailing" secondItem="4NH-2C-cbv" secondAttribute="trailing" id="X9x-HA-zJl"/>
-                                    <constraint firstItem="dSW-rN-uKC" firstAttribute="leading" secondItem="sxz-nD-Qsw" secondAttribute="leading" id="dbC-au-80R"/>
-                                    <constraint firstItem="dSW-rN-uKC" firstAttribute="top" secondItem="sxz-nD-Qsw" secondAttribute="top" id="kiB-s2-BOE"/>
+                                    <constraint firstAttribute="trailing" secondItem="uo5-9s-MvP" secondAttribute="trailing" id="Rqj-ro-ubq"/>
+                                    <constraint firstItem="EwC-b3-3Jg" firstAttribute="top" secondItem="cU3-j4-sRW" secondAttribute="top" id="S1R-mb-IkK"/>
+                                    <constraint firstAttribute="trailing" secondItem="EwC-b3-3Jg" secondAttribute="trailing" id="ajY-tQ-Upz"/>
+                                    <constraint firstItem="EwC-b3-3Jg" firstAttribute="leading" secondItem="cU3-j4-sRW" secondAttribute="leading" id="azu-Ep-Ioi"/>
+                                    <constraint firstItem="uo5-9s-MvP" firstAttribute="leading" secondItem="cU3-j4-sRW" secondAttribute="leading" id="pse-qu-p7d"/>
+                                    <constraint firstAttribute="bottom" secondItem="uo5-9s-MvP" secondAttribute="bottom" constant="5" id="vIo-1X-y3C"/>
                                 </constraints>
                                 <size key="customSize" width="88" height="88"/>
                                 <connections>
-                                    <outlet property="coinImage" destination="2cR-ZH-c1T" id="dHj-yx-c84"/>
-                                    <outlet property="coinNameLabel" destination="4NH-2C-cbv" id="gLN-FD-pxs"/>
-                                    <outlet property="nameLabel" destination="4NH-2C-cbv" id="lCR-B1-sgy"/>
-                                    <outlet property="thumb" destination="2cR-ZH-c1T" id="9Q9-pP-9Dw"/>
+                                    <outlet property="nameLabel" destination="uo5-9s-MvP" id="RZ7-IX-tOd"/>
+                                    <outlet property="thumb" destination="Zmp-Pi-T77" id="S5A-Lt-yeB"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="cN5-A9-nan" id="trD-wD-CQD"/>
-                            <outlet property="delegate" destination="cN5-A9-nan" id="qgn-1Z-4Ff"/>
+                            <outlet property="dataSource" destination="2yr-Lz-qlU" id="hts-nU-mDw"/>
+                            <outlet property="delegate" destination="2yr-Lz-qlU" id="gZR-bf-3gO"/>
                         </connections>
                     </collectionView>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="exG-5J-d6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ya4-xJ-cZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1968.8" y="142.57871064467767"/>
+            <point key="canvasLocation" x="1997.5999999999999" y="142.57871064467767"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ucH-JB-BBp">

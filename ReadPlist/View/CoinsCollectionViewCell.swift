@@ -10,6 +10,6 @@ import UIKit
 
 class CoinsCollectionViewCell: UICollectionViewCell {
     
-  @IBOutlet var coinNameLabel: UILabel!
-  @IBOutlet var coinImage: UIImageView!
+  @IBOutlet var nameLabel: UILabel!
+  @IBOutlet var thumb: UIImageView!
 }

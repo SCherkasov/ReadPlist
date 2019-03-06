@@ -1,5 +1,5 @@
 //
-//  MyCollectionViewCell.swift
+//  CountriesCollectionViewCell.swift
 //  ReadPlist
 //
 //  Created by Stanislav Cherkasov on 3/6/19.
@@ -8,9 +8,8 @@
 
 import UIKit
 
-class MyCollectionViewCell: UICollectionViewCell {
+class CountriesCollectionViewCell: UICollectionViewCell {
     
-
   @IBOutlet var thumb: UIImageView!
   @IBOutlet var nameLabel: UILabel!
 }
