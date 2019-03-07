@@ -28,9 +28,7 @@ class CoinStore {
       let dict = unserialized as? [String: Any],
       let countriesDict = dict["Countries"] as? [[String: Any]]
     {
-      
-      
-      _ = countriesDict.map { (countryDict: [String: Any]) in
+      for countryDict in countriesDict {
         if let countryName = countryDict["name"] as? String,
           let countryFlagImageName = countryDict["flagImageName"] as? String,
           let countryCoinsD = countryDict["Coins"] as? [[String: String]]
@@ -39,16 +37,17 @@ class CoinStore {
             countryFlagImageName)
           countries.append(country)
           
-          coins = coins +
-            countryCoinsD.compactMap { (coinDict: [String: String]) -> Coin? in
-              if let name = coinDict["name"],
-                let image = coinDict["image"]
-              {
-                return Coin.init(name: name, image: image, country: country)
-              }
-              
-              return nil
+          var countryCoins = [Coin]()
+          
+          for coinDict in countryCoinsD {
+            if let name = coinDict["name"],
+              let image = coinDict["image"]
+            {
+              countryCoins.append(Coin.init(name: name, image: image, country: country))
+            }
           }
+          
+          coins = coins + countryCoins
         }
       }
     }
