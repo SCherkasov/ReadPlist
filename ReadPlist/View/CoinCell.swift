@@ -8,8 +8,9 @@
 
 import UIKit
 
-class CoinsCollectionViewCell: UICollectionViewCell {
+class CoinCell: UICollectionViewCell {
     
   @IBOutlet var nameLabel: UILabel!
   @IBOutlet var thumb: UIImageView!
+    
 }

@@ -1,31 +1,21 @@
 //
-//  CountriesCollectionViewController.swift
+//  CoinStore.swift
 //  ReadPlist
 //
-//  Created by Stanislav Cherkasov on 3/6/19.
+//  Created by Ievgen Gavrysh on 3/7/19.
 //  Copyright © 2019 Stanislav Cherkasov. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-struct Coin {
-  var name: String
-  var image: String
-  var country: Country
-}
-
-struct Country {
-  var name: String
-  var flagImageName: String
-}
-
-class CountriesCollectionViewController: UICollectionViewController {
+class CoinStore {
   
-  var coins: [Coin] = []
-  var countries: [Country] = []
+  var coins = [Coin]()
+  var countries = [Country]()
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
+  func loadCoins() {
+    var countries = [Country]()
+    var coins = [Coin]()
     
     if let path = Bundle.main.path(forResource: "My",
                                    ofType: "plist"),
@@ -39,7 +29,8 @@ class CountriesCollectionViewController: UICollectionViewController {
       let countriesDict = dict["Countries"] as? [[String: Any]]
     {
       
-      countriesDict.map { (countryDict: [String: Any]) in
+      
+      _ = countriesDict.map { (countryDict: [String: Any]) in
         if let countryName = countryDict["name"] as? String,
           let countryFlagImageName = countryDict["flagImageName"] as? String,
           let countryCoinsD = countryDict["Coins"] as? [[String: String]]
@@ -60,33 +51,10 @@ class CountriesCollectionViewController: UICollectionViewController {
           }
         }
       }
-      
-      print(coins)
     }
     
-  }
-  
-  // MARK: UICollectionViewDataSource
-  
-  override func numberOfSections(in collectionView: UICollectionView) -> Int {
-    
-    return 1
-  }
-  
-  override func collectionView(_ collectionView: UICollectionView,
-                               numberOfItemsInSection section: Int) -> Int {
-    
-    return countries.count
-  }
-  
-  override func collectionView(_ collectionView: UICollectionView,
-                cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
-                              for: indexPath) as! CountriesCollectionViewCell
-    
-    cell.nameLabel.text = countries[indexPath.row].name
-    cell.thumb.image = UIImage(named: countries[indexPath.row].flagImageName)
-    
-    return cell
+    self.coins = coins
+    self.countries = countries
   }
 }
+

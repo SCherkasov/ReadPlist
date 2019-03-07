@@ -8,8 +8,9 @@
 
 import UIKit
 
-class CountriesCollectionViewCell: UICollectionViewCell {
+class CountryCell: UICollectionViewCell {
     
   @IBOutlet var thumb: UIImageView!
   @IBOutlet var nameLabel: UILabel!
+    
 }

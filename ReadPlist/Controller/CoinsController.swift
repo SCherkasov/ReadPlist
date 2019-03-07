@@ -8,35 +8,33 @@
 
 import UIKit
 
-class CoinsCollectionViewController: UICollectionViewController {
+class CoinsController: UICollectionViewController {
   
-  var coins: [Coin] = []
+  var coinStore = CoinStore()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-   
+    self.coinStore.loadCoins()
   }
   
   // MARK: UICollectionViewDataSource
   
   override func numberOfSections(in collectionView: UICollectionView) -> Int {
-    
     return 1
   }
   
   override func collectionView(_ collectionView: UICollectionView,
-                               numberOfItemsInSection section: Int) -> Int {
-    
-    return coins.count
+                               numberOfItemsInSection section: Int) -> Int
+  {
+    return self.coinStore.coins.count
   }
   
   override func collectionView(_ collectionView: UICollectionView,
                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
-                                  for: indexPath) as! CoinsCollectionViewCell
-    
-    cell.nameLabel.text = coins[indexPath.row].name
-    cell.thumb.image = UIImage(named: coins[indexPath.row].image)
+                                  for: indexPath) as! CoinCell
+    cell.nameLabel.text = self.coinStore.coins[indexPath.row].name
+    cell.thumb.image = UIImage(named: self.coinStore.coins[indexPath.row].image)
     
     return cell
   }
