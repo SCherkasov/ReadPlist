@@ -20,8 +20,7 @@ class CoinStore {
     if let path = Bundle.main.path(forResource: "My",
                                    ofType: "plist"),
       let data = FileManager.default.contents(atPath: path),
-      let unserialized
-      = try? PropertyListSerialization.propertyList(
+      let unserialized = try? PropertyListSerialization.propertyList(
         from: data,
         options:.mutableContainersAndLeaves,
         format:nil),
