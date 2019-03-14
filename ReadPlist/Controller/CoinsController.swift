@@ -11,6 +11,7 @@ import UIKit
 class CoinsController: UICollectionViewController {
   
   var coinStore = CoinStore()
+  var selectedCountry: Country?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -33,6 +34,7 @@ class CoinsController: UICollectionViewController {
                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
                                   for: indexPath) as! CoinCell
+
     cell.nameLabel.text = self.coinStore.coins[indexPath.row].name
     cell.thumb.image = UIImage(named: self.coinStore.coins[indexPath.row].image)
     

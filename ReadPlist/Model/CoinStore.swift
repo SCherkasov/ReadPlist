@@ -11,7 +11,9 @@ import Foundation
 class CoinStore {
   
   var coins = [Coin]()
+  private var internalCoins = [Coin]()
   var countries = [Country]()
+  
   
   func loadCoins() {
     var countries = [Country]()
@@ -51,7 +53,7 @@ class CoinStore {
       }
     }
     
-    self.coins = coins
+    self.internalCoins = coins
     self.countries = countries
   }
 }
