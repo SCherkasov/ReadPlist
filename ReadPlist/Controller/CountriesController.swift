@@ -30,12 +30,23 @@ class CountriesController: UICollectionViewController {
     return self.coinStore.countries.count
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "showCoins" {
+      let coinsVC = segue.destination as! CoinsController
+      let cell = sender as! CountryCell
+      let indexPath = self.collectionView.indexPath(for: cell)
+      let countryPost = self.coinStore.coins[(indexPath?.row)!] as Coin
+      coinsVC.coinStore.coins = [countryPost]
+    }
+  }
+  
   override func collectionView(_ collectionView: UICollectionView,
                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
   {
     let cell = collectionView.dequeueReusableCell(
         withReuseIdentifier: "cell",
         for: indexPath) as! CountryCell
+    
     cell.nameLabel.text = self.coinStore.countries[indexPath.row].name
     cell.thumb.image = UIImage(named: self.coinStore.countries[indexPath.row].flagImageName)
     
