@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A669FB4223C1147005423EB /* My.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A669FB3223C1147005423EB /* My.json */; };
 		8A6D0E282229810200AA544B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D0E272229810200AA544B /* AppDelegate.swift */; };
 		8A6D0E2D2229810200AA544B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0E2B2229810200AA544B /* Main.storyboard */; };
 		8A6D0E2F2229810700AA544B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0E2E2229810700AA544B /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A669FB3223C1147005423EB /* My.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = My.json; sourceTree = "<group>"; };
 		8A6D0E242229810200AA544B /* ReadPlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadPlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6D0E272229810200AA544B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A6D0E2C2229810200AA544B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				8A6D0E302229810700AA544B /* LaunchScreen.storyboard */,
 				8A6D0E332229810700AA544B /* Info.plist */,
 				8A6D0E39222981C600AA544B /* My.plist */,
+				8A669FB3223C1147005423EB /* My.json */,
 			);
 			path = ReadPlist;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				8A6D0E322229810700AA544B /* LaunchScreen.storyboard in Resources */,
 				8A6D0E2F2229810700AA544B /* Assets.xcassets in Resources */,
 				8A6D0E2D2229810200AA544B /* Main.storyboard in Resources */,
+				8A669FB4223C1147005423EB /* My.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
