@@ -12,7 +12,6 @@
 		8A6D0E2D2229810200AA544B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0E2B2229810200AA544B /* Main.storyboard */; };
 		8A6D0E2F2229810700AA544B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0E2E2229810700AA544B /* Assets.xcassets */; };
 		8A6D0E322229810700AA544B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0E302229810700AA544B /* LaunchScreen.storyboard */; };
-		8A6D0E3A222981C600AA544B /* My.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D0E39222981C600AA544B /* My.plist */; };
 		8A6D0E3E222FD5CB00AA544B /* CountriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D0E3D222FD5CB00AA544B /* CountriesController.swift */; };
 		8A6D0E42222FEC7600AA544B /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D0E41222FEC7600AA544B /* CoinCell.swift */; };
 		8A6D0E44222FEC8700AA544B /* CoinsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D0E43222FEC8700AA544B /* CoinsController.swift */; };
@@ -30,7 +29,6 @@
 		8A6D0E2E2229810700AA544B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A6D0E312229810700AA544B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A6D0E332229810700AA544B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A6D0E39222981C600AA544B /* My.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = My.plist; sourceTree = "<group>"; };
 		8A6D0E3D222FD5CB00AA544B /* CountriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesController.swift; sourceTree = "<group>"; };
 		8A6D0E41222FEC7600AA544B /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
 		8A6D0E43222FEC8700AA544B /* CoinsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsController.swift; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 				8A6D0E2E2229810700AA544B /* Assets.xcassets */,
 				8A6D0E302229810700AA544B /* LaunchScreen.storyboard */,
 				8A6D0E332229810700AA544B /* Info.plist */,
-				8A6D0E39222981C600AA544B /* My.plist */,
 				8A669FB3223C1147005423EB /* My.json */,
 			);
 			path = ReadPlist;
@@ -170,7 +167,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A6D0E3A222981C600AA544B /* My.plist in Resources */,
 				8A6D0E322229810700AA544B /* LaunchScreen.storyboard in Resources */,
 				8A6D0E2F2229810700AA544B /* Assets.xcassets in Resources */,
 				8A6D0E2D2229810200AA544B /* Main.storyboard in Resources */,
