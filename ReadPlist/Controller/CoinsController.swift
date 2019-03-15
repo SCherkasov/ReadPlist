@@ -28,7 +28,7 @@ class CoinsController: UICollectionViewController {
   override func collectionView(_ collectionView: UICollectionView,
                                numberOfItemsInSection section: Int) -> Int
   {
-    return self.coinStore.coins.count
+    return self.coinStore.coins.count + 1
   }
   
   override func collectionView(_ collectionView: UICollectionView,
@@ -36,9 +36,15 @@ class CoinsController: UICollectionViewController {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
                                   for: indexPath) as! CoinCell
 
+    if indexPath.row < self.coinStore.coins.count {
     cell.nameLabel.text = self.coinStore.coins[indexPath.row].name
     cell.thumb.image = UIImage(named: self.coinStore.coins[indexPath.row].image)
-    
+    } else {
+      if indexPath.row == self.coinStore.coins.count {
+        cell.nameLabel.text = selectedCountry?.name
+        cell.thumb.image = UIImage(named: (selectedCountry?.flagImageName)!)
+      }
+    }
     return cell
   }
 }
