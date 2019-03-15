@@ -9,7 +9,9 @@
 import Foundation
 
 struct Coin {
-    var name: String
-    var image: String
-    var country: Country
+  
+  var name: String
+  var image: String
+  var country: Country
+  
 }

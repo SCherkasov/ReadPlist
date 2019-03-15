@@ -10,8 +10,20 @@ import Foundation
 
 class CoinStore {
   
-  var coins = [Coin]()
+  public var coins = [Coin]()
+  private var coinsInternal = [Coin]()
   var countries = [Country]()
+  
+  func filterCoins(for country: Country) {
+    var filteredCoins = [Coin]()
+    for coin in self.coinsInternal {
+      if coin.country == country {
+        filteredCoins.append(coin)
+      }
+    }
+    
+    self.coins = filteredCoins
+  }
   
   func loadCoins() {
     var countries = [Country]()
@@ -51,6 +63,7 @@ class CoinStore {
       }
     }
     
+    self.coinsInternal = coins
     self.coins = coins
     self.countries = countries
   }

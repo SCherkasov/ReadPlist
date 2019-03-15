@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct Country {
-    var name: String
-    var flagImageName: String
+struct Country: Equatable {
+  var name: String
+  var flagImageName: String
+  
+  static func==(lhs: Country, rhs: Country) -> Bool {
+    return lhs.name == rhs.name && lhs.flagImageName == rhs.flagImageName
+  }
 }

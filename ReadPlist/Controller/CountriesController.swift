@@ -10,6 +10,7 @@ import UIKit
 
 class CountriesController: UICollectionViewController {
   var coinStore = CoinStore()
+  var selectedCountry: Country?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -32,11 +33,14 @@ class CountriesController: UICollectionViewController {
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "showCoins" {
-      let coinsVC = segue.destination as! CoinsController
-      let cell = sender as! CountryCell
-      let indexPath = self.collectionView.indexPath(for: cell)
-      let countryPost = self.coinStore.coins[(indexPath?.row)!] as Coin
-      coinsVC.coinStore.coins = [countryPost]
+      if let coinsController = segue.destination as? CoinsController,
+        let cell = sender as? CountryCell,
+        let indexPath = self.collectionView.indexPath(for: cell)
+      {
+        self.selectedCountry = self.coinStore.countries[indexPath.row]
+        coinsController.selectedCountry = self.selectedCountry
+        coinsController.coinStore = self.coinStore
+      }
     }
   }
   
