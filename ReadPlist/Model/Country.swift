@@ -12,3 +12,12 @@ struct Country {
     var name: String
     var flagImageName: String
 }
+
+extension Country: Equatable {
+  static func == (lhs: Country, rhs: Country) -> Bool {
+    return
+      
+      lhs.name == rhs.name &&
+        lhs.flagImageName == rhs.flagImageName
+  }
+}

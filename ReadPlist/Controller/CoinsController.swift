@@ -16,6 +16,7 @@ class CoinsController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.coinStore.loadCoins()
+    self.coinStore.filterCoins(with: selectedCountry!)
   }
   
   // MARK: UICollectionViewDataSource

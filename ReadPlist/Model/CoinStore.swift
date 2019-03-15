@@ -54,7 +54,17 @@ class CoinStore {
     }
     
     self.internalCoins = coins
+    self.coins = coins
     self.countries = countries
   }
+  
+  func filterCoins(with country: Country) {
+    self.coins = []
+    for coin in self.internalCoins {
+      if coin.country == country {
+        //coinsArray.append(coin)
+        self.coins.append(coin)
+      }
+    }
 }
-
+}
