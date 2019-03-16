@@ -20,6 +20,7 @@
 		DFA09A55223189B000A80159 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA09A54223189B000A80159 /* Country.swift */; };
 		DFA09A57223189CB00A80159 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA09A56223189CB00A80159 /* Coin.swift */; };
 		DFA09A59223197A100A80159 /* CoinStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA09A58223197A100A80159 /* CoinStore.swift */; };
+		DFA09A5D223C505D00A80159 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA09A5C223C505D00A80159 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DFA09A54223189B000A80159 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		DFA09A56223189CB00A80159 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		DFA09A58223197A100A80159 /* CoinStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinStore.swift; sourceTree = "<group>"; };
+		DFA09A5C223C505D00A80159 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		8A6D0E262229810200AA544B /* ReadPlist */ = {
 			isa = PBXGroup;
 			children = (
+				DFA09A5B223C504100A80159 /* Lib */,
 				8A6D0E272229810200AA544B /* AppDelegate.swift */,
 				8A6D0E2B2229810200AA544B /* Main.storyboard */,
 				DFA09A532231899C00A80159 /* Model */,
@@ -110,6 +113,14 @@
 				DFA09A58223197A100A80159 /* CoinStore.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DFA09A5B223C504100A80159 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DFA09A5C223C505D00A80159 /* UIImage+Extension.swift */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 				DFA09A59223197A100A80159 /* CoinStore.swift in Sources */,
 				8A6D0E3E222FD5CB00AA544B /* CountriesController.swift in Sources */,
 				8A6D0E44222FEC8700AA544B /* CoinsController.swift in Sources */,
+				DFA09A5D223C505D00A80159 /* UIImage+Extension.swift in Sources */,
 				8A6D0E48222FFC6400AA544B /* CountryCell.swift in Sources */,
 				8A6D0E282229810200AA544B /* AppDelegate.swift in Sources */,
 				DFA09A55223189B000A80159 /* Country.swift in Sources */,

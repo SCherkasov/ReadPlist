@@ -15,6 +15,7 @@ class CountriesController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.coinStore.loadCoins()
+    navigationController?.navigationBar.barTintColor = UIColor.black
       
     print(self.coinStore.coins)
   }
@@ -51,7 +52,8 @@ class CountriesController: UICollectionViewController {
         for: indexPath) as! CountryCell
     
     cell.nameLabel.text = self.coinStore.countries[indexPath.row].name
-    cell.thumb.image = UIImage(named: self.coinStore.countries[indexPath.row].flagImageName)
+    let image = UIImage(named: self.coinStore.countries[indexPath.row].flagImageName)
+    cell.thumb.image = image
     
     return cell
   }
