@@ -88,7 +88,10 @@ class CoinsController: UICollectionViewController {
 
     cell.nameLabel.text = self.coinStore.coins[indexPath.row].name
     let image = UIImage(named: self.coinStore.coins[indexPath.row].image)
-    cell.thumb.image = image?.imageByMakingWhiteBackgroundTransparent()
+    cell.thumb.image = image
+    
+    cell.thumb.layer.cornerRadius = cell.thumb.frame.size.height / 2;
+    cell.thumb.clipsToBounds = true;
 
     return cell
   }

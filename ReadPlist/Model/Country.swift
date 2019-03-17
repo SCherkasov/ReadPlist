@@ -9,8 +9,8 @@
 import Foundation
 
 struct Country {
-    var name: String
-    var flagImageName: String
+  var name: String
+  var flagImageName: String
 }
 
 extension Country: Equatable {
